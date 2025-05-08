@@ -1,5 +1,9 @@
-Galio-Protolink.X/MAkefile
+Galio-Protolink.X/Makefile
 Galio-Protolink.X/nbproject
+./build
+./debug
+./dist
+./main.ccspjt
 # Prerequisites
 *.d
 
