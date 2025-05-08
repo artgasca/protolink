@@ -8,7 +8,7 @@
 #include <18F67K40.h>
 #device ADC = 10
 //#use fast_io(G)
-#include "tunacore.h"
+#include "include/tunacore.h"
 
 #define DEVICE_DEBUG            TRUE
 #define DEVICE_SERIAL_SOURCE    UART_INT_RDA3
@@ -56,8 +56,8 @@
 
 
 //#include <bootloader.h>
-#include "tuna-modbus/modbus.c"
-#include "devices/generic_uart.h"
+#include "lib/tuna-modbus/modbus.c"
+#include "lib/devices/generic_uart.h"
 
 #define MODBUS_ADDRESS 0x01
 #define DELAY_LED   1000
