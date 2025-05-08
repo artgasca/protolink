@@ -1,7 +1,7 @@
 /* 
  * File:   main.c
  * Author: Arturo Gasca
- *
+ * Galio Electronics
  * Created on 4 de febrero de 2025, 04:11 PM
  */
 
