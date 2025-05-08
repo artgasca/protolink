@@ -1,4 +1,4 @@
-Compiling C:\Users\artga\MPLABXProjects\protolink\Galio-ProtoLink.X\src\main on 08-may.-25 at 01:49
+Compiling C:\Users\artga\MPLABXProjects\protolink\Galio-ProtoLink.X\src\main on 08-may.-25 at 01:51
 C:\Users\artga\MPLABXProjects\protolink\Galio-ProtoLink.X\lib\tuna-modbus\modbus_phy_layer_rtu.c:25:1:  Info#300  More info:   Timer 1 tick time is 102.40 us
 C:\Users\artga\MPLABXProjects\protolink\Galio-ProtoLink.X\src\main.c:316:1:  Warning#216  Interrupts disabled during call to prevent re-entrancy:  (modbus_enable_timeout)
 C:\Users\artga\MPLABXProjects\protolink\Galio-ProtoLink.X\src\main.c:316:1:  Warning#216  Interrupts disabled during call to prevent re-entrancy:  (modbus_calc_crc)
