@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=
+SOURCEFILES_QUOTED_IF_SPACED=src/main.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=
-POSSIBLE_DEPFILES=
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/src/main.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/src/main.o.d
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES=${OBJECTDIR}/src/main.o
 
 # Source Files
-SOURCEFILES=
+SOURCEFILES=src/main.c
 
 
 
@@ -98,7 +98,31 @@ sourceline.gcccompat=sourceline="\#device ANSI" sourceline="\#device PASS_STRING
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
+${OBJECTDIR}/src/main.o: src/main.c  nbproject/Makefile-${CND_CONF}.mk
+	${MKDIR} ${OBJECTDIR}/src 
+ifeq (1,1) 
+	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
+	${MP_CC}  out="${OBJECTDIR}\src"  src/main.c +FH +DF +CC #__DEBUG=1 +ICD +Y=9 +EA I+="lib" I+="src" I+="include" I+="..\..\..\..\..\Program Files (x86)\PICC\Drivers" I+="..\..\..\..\..\Program Files (x86)\PICC\Devices" +DF +LN +T +A +M +J +Z -P #__18F67K40=1 
+	@mv ${OBJECTDIR}/src/main.cof "dist/${CND_CONF}/${IMAGE_TYPE}/Galio-ProtoLink.X.${IMAGE_TYPE}.cof" 
+	@mv ${OBJECTDIR}/src/main.hex "dist/${CND_CONF}/${IMAGE_TYPE}/Galio-ProtoLink.X.${IMAGE_TYPE}.hex"
+else 
+	${MP_CC}  out=""${OBJECTDIR}\src"" src/main.c +EXPORT +FH +DF +CC #__DEBUG=1 +ICD +Y=9 +EA I+="lib" I+="src" I+="include" I+="..\..\..\..\..\Program Files (x86)\PICC\Drivers" I+="..\..\..\..\..\Program Files (x86)\PICC\Devices" +DF +LN +T +A +M +J +Z -P #__18F67K40=1 +EXPORTD="${OBJECTDIR}/src"  
+	
+endif 
+	
 else
+${OBJECTDIR}/src/main.o: src/main.c  nbproject/Makefile-${CND_CONF}.mk
+	${MKDIR} ${OBJECTDIR}/src 
+ifeq (1,1) 
+	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
+	${MP_CC}  out="${OBJECTDIR}\src"  src/main.c +FH +DF +CC +Y=9 +EA I+="lib" I+="src" I+="include" I+="..\..\..\..\..\Program Files (x86)\PICC\Drivers" I+="..\..\..\..\..\Program Files (x86)\PICC\Devices" +DF +LN +T +A +M +J +Z -P #__18F67K40=1 
+	@mv ${OBJECTDIR}/src/main.cof "dist/${CND_CONF}/${IMAGE_TYPE}/Galio-ProtoLink.X.${IMAGE_TYPE}.cof" 
+	@mv ${OBJECTDIR}/src/main.hex "dist/${CND_CONF}/${IMAGE_TYPE}/Galio-ProtoLink.X.${IMAGE_TYPE}.hex"
+else 
+	${MP_CC}  out=""${OBJECTDIR}\src"" src/main.c +EXPORT +FH +DF +CC +Y=9 +EA I+="lib" I+="src" I+="include" I+="..\..\..\..\..\Program Files (x86)\PICC\Drivers" I+="..\..\..\..\..\Program Files (x86)\PICC\Devices" +DF +LN +T +A +M +J +Z -P #__18F67K40=1 +EXPORTD="${OBJECTDIR}/src"  
+	
+endif 
+	
 endif
 
 # ------------------------------------------------------------------------------------
@@ -106,20 +130,20 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/Galio-ProtoLink.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-ifeq (0,1) 
+ifeq (1,1) 
 	
 else 
-	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=Galio-ProtoLink.X.${IMAGE_TYPE}.hex= +Y=9 +EA +DF +LN +T +A +M +J +Z -P
+	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=Galio-ProtoLink.X.${IMAGE_TYPE}.hex=${OBJECTDIR}/src/main.o +Y=9 +EA I+="lib" I+="src" I+="include" I+="..\..\..\..\..\Program Files (x86)\PICC\Drivers" I+="..\..\..\..\..\Program Files (x86)\PICC\Devices" +DF +LN +T +A +M +J +Z -P
 	
 endif 
 	
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/Galio-ProtoLink.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-ifeq (0,1) 
+ifeq (1,1) 
 	
 else 
-	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=Galio-ProtoLink.X.${IMAGE_TYPE}.hex= +Y=9 +EA +DF +LN +T +A +M +J +Z -P
+	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=Galio-ProtoLink.X.${IMAGE_TYPE}.hex=${OBJECTDIR}/src/main.o +Y=9 +EA I+="lib" I+="src" I+="include" I+="..\..\..\..\..\Program Files (x86)\PICC\Drivers" I+="..\..\..\..\..\Program Files (x86)\PICC\Devices" +DF +LN +T +A +M +J +Z -P
 	
 endif 
 	

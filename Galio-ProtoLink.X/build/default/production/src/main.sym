@@ -1,0 +1,331 @@
+000     @SCRATCH
+000     @MEMSET.P1
+001     @SCRATCH
+001-002 @MEMSET.P1
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019     @INTERRUPT_AREA
+01A     @INTERRUPT_AREA
+01B     @INTERRUPT_AREA
+01C-01D strtok.save
+01E-01F __DYNAMIC_HEAD
+020-023 f_IEEEtoPIC.f
+020-023 f_PICtoIEEE.f
+024-027 _Randseed
+028     rs232_errors
+029.0   modbus_serial_new
+029.1   modbus_timeout_enabled
+02A-06D modbus_rx
+06E     UPPER_TICKS_1
+06F     modbus_serial_state
+070-071 modbus_serial_crc
+072-173 data
+174-175 uart_serial_rcv.replyidx
+176-177 @sprintf_string
+178     coils
+179     inputs
+17A-17B event_count
+17C-18F input_registers
+190-1A3 holding_registers
+1A4-1A7 peso_int32
+1A8-1A9 peso_hi
+1AA-1AB peso_lo
+1AC-1AF peso
+1B0-1B2 unidad
+1B3     estado
+1B4     MAIN.i
+1B5-1BC procesar_trama.peso_str
+1B5-1B6 f_PICtoIEEE.ret
+1B5     procesar_modbus.data
+1B5     modbus_check_timeout.@SCRATCH1
+1B5     MAIN.@SCRATCH1
+1B6     procesar_modbus.i
+1B6     modbus_check_timeout.@SCRATCH2
+1B6     MAIN.@SCRATCH2
+1B7     procesar_modbus.j
+1B8     procesar_modbus.i
+1B9     procesar_modbus.j
+1BA     modbus_read_coils_rsp.address
+1BA     modbus_read_discrete_input_rsp.address
+1BA     modbus_exception_rsp.address
+1BA     swap_bits.c
+1BA     procesar_modbus.@SCRATCH1
+1BB     modbus_read_discrete_input_rsp.byte_count
+1BB     modbus_read_coils_rsp.byte_count
+1BB-1BC modbus_exception_rsp.func
+1BB     swap_bits.@SCRATCH1
+1BB     procesar_modbus.@SCRATCH2
+1BC-1BD modbus_read_coils_rsp.coil_data
+1BC     modbus_write_single_coil_rsp.address
+1BC-1BD modbus_read_discrete_input_rsp.input_data
+1BC     procesar_modbus.@SCRATCH3
+1BD-1BE strtof.s
+1BD     modbus_read_holding_registers_rsp.address
+1BD-1BE modbus_write_single_coil_rsp.output_address
+1BD-1BE strncpy.s1
+1BD     modbus_exception_rsp.error
+1BD     modbus_read_input_registers_rsp.address
+1BD     procesar_modbus.@SCRATCH4
+1BE     modbus_read_input_registers_rsp.byte_count
+1BE     modbus_write_multiple_coils_rsp.address
+1BE     modbus_read_holding_registers_rsp.byte_count
+1BE     modbus_read_discrete_input_rsp.i
+1BE     modbus_write_single_register_rsp.address
+1BE     modbus_write_multiple_registers_rsp.address
+1BE     modbus_read_coils_rsp.i
+1BE     modbus_exception_rsp.@SCRATCH1
+1BE     procesar_modbus.@SCRATCH5
+1BF-1C0 modbus_write_multiple_registers_rsp.start_address
+1BF-1C0 modbus_write_multiple_coils_rsp.start_address
+1BF-1C0 modbus_read_input_registers_rsp.input_data
+1BF-1C0 strncpy.s2
+1BF-1C0 modbus_read_holding_registers_rsp.reg_data
+1BF-1C0 strtof.endptr
+1BF-1C0 modbus_write_single_coil_rsp.output_value
+1BF-1C0 modbus_write_single_register_rsp.reg_address
+1BF     modbus_read_coils_rsp.@SCRATCH1
+1BF     modbus_read_discrete_input_rsp.@SCRATCH1
+1BF     modbus_exception_rsp.@SCRATCH2
+1BF     procesar_modbus.@SCRATCH6
+1C1     modbus_read_holding_registers_rsp.i
+1C1-1C2 modbus_write_multiple_coils_rsp.quantity
+1C1-1C2 modbus_write_multiple_registers_rsp.quantity
+1C1-1C4 strtof.pow10
+1C1-1C2 modbus_write_single_register_rsp.reg_value
+1C1-1C2 strncpy.n
+1C1     modbus_read_input_registers_rsp.i
+1C1     modbus_write_single_coil_rsp.@SCRATCH1
+1C2     modbus_read_holding_registers_rsp.@SCRATCH1
+1C2     modbus_read_input_registers_rsp.@SCRATCH1
+1C3     modbus_serial_send_stop.crc_low
+1C3-1C4 strncpy.s
+1C3     modbus_serial_send_start.to
+1C3     modbus_read_holding_registers_rsp.@SCRATCH2
+1C3     modbus_read_input_registers_rsp.@SCRATCH2
+1C3     modbus_write_single_register_rsp.@SCRATCH1
+1C3     modbus_write_multiple_coils_rsp.@SCRATCH1
+1C3     modbus_write_multiple_registers_rsp.@SCRATCH1
+1C4     modbus_serial_send_stop.crc_high
+1C4     modbus_serial_send_start.func
+1C4     modbus_read_holding_registers_rsp.@SCRATCH3
+1C4     modbus_read_input_registers_rsp.@SCRATCH3
+1C5-1C8 strtof.result
+1C5     modbus_serial_putc.c
+1C5     strncpy.@SCRATCH1
+1C6     @PUTCHAR_BIU_2.P1
+1C6     strncpy.@SCRATCH2
+1C7     strncpy.@SCRATCH3
+1C9.0   strtof.skip
+1C9.1   strtof.sign
+1C9.2   strtof.point
+1CA     strtof.c
+1CB     strtof.ptr
+1CC-1CF @MULFF.P1
+1CC     strtof.@SCRATCH1
+1CD     strtof.@SCRATCH2
+1CE     strtof.@SCRATCH3
+1CF     strtof.@SCRATCH4
+1D0-1D1 @ITOF.P1
+1D0-1D3 @ADDFF.P2
+1D0-1D3 @MULFF.P3
+1D0-1D3 @DIVFF.P4
+1D4-1D7 @DIVFF.P1
+1D4-1D7 @ADDFF.P2
+1D4     @MULFF.@SCRATCH1
+1D5     @MULFF.@SCRATCH2
+1D6     @MULFF.@SCRATCH3
+1D8     @ADDFF.@SCRATCH1
+1D8     @DIVFF.@SCRATCH1
+1D9     @ADDFF.@SCRATCH2
+1D9     @DIVFF.@SCRATCH2
+1DA     @ADDFF.@SCRATCH3
+1DA     @DIVFF.@SCRATCH3
+1DB     @ADDFF.@SCRATCH4
+1DB     @DIVFF.@SCRATCH4
+1DC     @ADDFF.@SCRATCH5
+1DC     @DIVFF.@SCRATCH5
+1DD     @ADDFF.@SCRATCH6
+1DD     @DIVFF.@SCRATCH6
+1DE     @ADDFF.@SCRATCH7
+1DF     @ADDFF.@SCRATCH8
+1E0     incomming_modbus_serial.c
+1E0     uart_serial_rcv.c
+1E1     modbus_enable_timeout.enable
+1E1     modbus_calc_crc.data
+1E1     incomming_modbus_serial.@SCRATCH1
+1E1     uart_serial_rcv.@SCRATCH1
+1E2     modbus_calc_crc.uIndex
+1E2-1E3 @SET_TICKS_1.P1
+1E2     incomming_modbus_serial.@SCRATCH2
+1E2     uart_serial_rcv.@SCRATCH2
+1E3     uart_serial_rcv.@SCRATCH3
+1E4     uart_serial_rcv.@SCRATCH4
+E41.2   WDTSTATE
+EC2.4   LVDRDY
+EC2.5   LVDOUT
+EC8.6   C3OUT
+ECC.6   C2OUT
+ED0.6   C1OUT
+EE1     TXSTA
+EE1.1   TRMT
+F1C     CCP_5_LOW
+F1C     CCP_5
+F1D     CCP_5_HIGH
+F20     CCP_4_LOW
+F20     CCP_4
+F21     CCP_4_HIGH
+F24     CCP_3
+F24     CCP_3_LOW
+F25     CCP_3_HIGH
+F51.0   MDBIT
+F51.5   MDOUT
+F5A.3   ADACLR
+FA1.5   PWM7OUT
+FA4.5   PWM6OUT
+FA5     CCP_2_LOW
+FA5     CCP_2
+FA6     CCP_2_HIGH
+FA9     CCP_1_LOW
+FA9     CCP_1
+FAA     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @MEMSET.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FE9-FEA @READ_PROGRAM_MEMORY.P5
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000D8  modbus_auchCRCHi.call
+0000EC  modbus_auchCRCHi.data
+0001EC  modbus_auchCRCLo.call
+000200  modbus_auchCRCLo.data
+000300  @TIMERISR_1
+00030E  @GETCH_BIU_2
+000328  @SET_TICKS_1
+000370  modbus_enable_timeout
+000382  modbus_calc_crc
+0003A8  incomming_modbus_serial
+000412  @GETCH_BIU_3
+000434  uart_serial_rcv
+00049C  @const1524.call
+0004A8  @const1529.call
+0004B4  @const1531.call
+0004C8  @const1538.call
+0004E2  @const1539.call
+0004FC  RCV_ON
+000516  modbus_init
+000524  @MEMSET
+000540  clean_buffer
+000552  device_init
+00056A  strncpy
+0005F8  @MULFF
+0006EE  @ITOF
+000724  @DIVFF
+000884  @ADDFF
+000AFC  strtof
+000D4E  procesar_trama
+000DF2  f_PICtoIEEE
+000E36  @GET_TICKS_1
+000E90  modbus_timeout_now
+000ECC  modbus_check_timeout
+000EF4  modbus_kbhit
+000F18  @PUTCHAR_BIU_2
+000F38  modbus_serial_putc
+000F5C  modbus_serial_send_start
+000F84  modbus_serial_send_stop
+000FB8  modbus_exception_rsp
+000FD8  modbus_read_coils_rsp
+00101E  modbus_read_discrete_input_rsp
+001064  modbus_read_holding_registers_rsp
+0010E0  modbus_read_input_registers_rsp
+00115C  modbus_write_single_coil_rsp
+001198  modbus_write_single_register_rsp
+0011D4  swap_bits
+00123E  modbus_write_multiple_coils_rsp
+00127A  modbus_write_multiple_registers_rsp
+0012B6  procesar_modbus
+001714  MAIN
+001714  @cinit1
+001812  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\artga\MPLABXProjects\protolink\Galio-ProtoLink.X\
+
+Project Files:
+    src\main.c                                              [08-may.-25 01:22  CRC=FAEED3EF]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F67K40.h [20-sep.-18 12:34  CRC=2570A75F]
+    include\tunacore.h                                      [04-ago.-21 16:56  CRC=C7481AF0]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [26-mar.-15 13:34  CRC=C4814297]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [05-sep.-14 12:47  CRC=897CEC6C]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-ene.-08 15:55  CRC=2D1F019F]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [29-jun.-16 10:34  CRC=7E9CC16B]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlibm.h [04-nov.-16 09:33  CRC=CB9FB4EB]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\memmgmt.c [24-feb.-12 11:47  CRC=E82E24A3]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ieeefloat.c [10-ago.-12 15:20  CRC=288D0B82]
+    lib\tuna-modbus\modbus.c                                [20-jul.-21 18:09  CRC=3E341B64]
+    lib\tuna-modbus\modbus.h                                [20-jul.-21 18:09  CRC=0C3C2C75]
+    lib\tuna-modbus\modbus_phy_layer.h                      [20-jul.-21 18:09  CRC=C29EC4EA]
+    lib\tuna-modbus\modbus_app_layer.h                      [20-jul.-21 18:09  CRC=CCCEAEAD]
+    lib\tuna-modbus\modbus_phy_layer_rtu.c                  [20-jul.-21 18:09  CRC=62B40DBC]
+    lib\tuna-modbus\modbus_app_layer.c                      [20-jul.-21 18:09  CRC=C73EB0AA]
+    lib\devices\generic_uart.h                              [17-ene.-22 13:32  CRC=9B683AF4]
+    lib\devices\generic_uart.c                              [07-may.-25 20:09  CRC=43FA5FF6]
+
+Source signature=E4E9E211
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=ACB7
+
+Units:
+    src\main (main)
+
+Compiler Settings:
+    Processor:      PIC18F67K40
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+    Predefined symbols:
+       #define __18F67K40 1
+
+Output Files:
+    XREF file:   build\default\production\src\main.xsym
+    Errors:      build\default\production\src\main.err
+    Ext Symbols: build\default\production\src\main.esym
+    INHX32:      build\default\production\src\main.hex
+    Symbols:     build\default\production\src\main.sym
+    List:        build\default\production\src\main.lst
+    Debug/COFF:  build\default\production\src\main.cof
+    Project:     main.ccspjt
+    Call Tree:   build\default\production\src\main.tre
+    Statistics:  build\default\production\src\main.STA

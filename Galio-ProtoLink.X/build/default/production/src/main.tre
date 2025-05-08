@@ -1,0 +1,165 @@
+ÀÄGalio-ProtoLink
+   ÃÄMAIN  0/516  Ram=3
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄmodbus_init  0/14  Ram=0
+   ³  ³  ÀÄRCV_ON  0/26  Ram=0
+   ³  ³     ÀÄ@GETCH_BIU_2  0/26  Ram=0
+   ³  ÃÄdevice_init  0/24  Ram=0
+   ³  ³  ÀÄclean_buffer  0/18  Ram=0
+   ³  ³     ÀÄ@MEMSET  0/28  Ram=0
+   ³  ÃÄprocesar_trama  0/164  Ram=8
+   ³  ³  ÃÄstrncpy  0/142  Ram=11
+   ³  ³  ÃÄstrtof  0/594  Ram=19
+   ³  ³  ³  ÃÄ@MULFF  0/246  Ram=11
+   ³  ³  ³  ÃÄ@ITOF  0/54  Ram=2
+   ³  ³  ³  ÃÄ@DIVFF  0/352  Ram=14
+   ³  ³  ³  ÃÄ@ADDFF  0/632  Ram=16
+   ³  ³  ³  ÃÄ@MULFF  0/246  Ram=11
+   ³  ³  ³  ÃÄ@ITOF  0/54  Ram=2
+   ³  ³  ³  ÃÄ@ADDFF  0/632  Ram=16
+   ³  ³  ³  ÀÄ@MULFF  0/246  Ram=11
+   ³  ³  ÃÄstrncpy  0/142  Ram=11
+   ³  ³  ÀÄstrtof  0/594  Ram=19
+   ³  ³     ÀÄ*
+   ³  ÃÄf_PICtoIEEE  0/68  Ram=6
+   ³  ÃÄmodbus_kbhit  0/36  Ram=0
+   ³  ³  ÀÄmodbus_check_timeout  0/40  Ram=2
+   ³  ³     ÃÄ@GET_TICKS_1  0/90  Ram=0
+   ³  ³     ÀÄmodbus_timeout_now  0/60  Ram=0
+   ³  ³        ÀÄmodbus_enable_timeout  0/18  Ram=1
+   ³  ³           ÀÄ@SET_TICKS_1  0/72  Ram=2
+   ³  ÀÄprocesar_modbus  0/1118  Ram=11
+   ³     ÃÄmodbus_exception_rsp  0/32  Ram=6
+   ³     ³  ÃÄmodbus_serial_send_start  0/40  Ram=2
+   ³     ³  ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ³  ÃÄ@PUTCHAR_BIU_2  0/32  Ram=1
+   ³     ³  ³  ³  ÀÄmodbus_calc_crc  0/38  Ram=2
+   ³     ³  ³  ³     ÃÄ@const1474  0/276  Ram=0
+   ³     ³  ³  ³     ÀÄ@const1477  0/276  Ram=0
+   ³     ³  ³  ÀÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³     ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄmodbus_serial_send_stop  0/52  Ram=2
+   ³     ³     ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³     ³  ÀÄ*
+   ³     ³     ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³     ³  ÀÄ*
+   ³     ³     ÀÄRCV_ON  0/26  Ram=0
+   ³     ³        ÀÄ*
+   ³     ÃÄmodbus_read_coils_rsp  0/70  Ram=6
+   ³     ³  ÃÄmodbus_serial_send_start  0/40  Ram=2
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄmodbus_serial_send_stop  0/52  Ram=2
+   ³     ³     ÀÄ*
+   ³     ÃÄmodbus_read_discrete_input_rsp  0/70  Ram=6
+   ³     ³  ÃÄmodbus_serial_send_start  0/40  Ram=2
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄmodbus_serial_send_stop  0/52  Ram=2
+   ³     ³     ÀÄ*
+   ³     ÃÄmodbus_exception_rsp  0/32  Ram=6
+   ³     ³  ÀÄ*
+   ³     ÃÄmodbus_read_holding_registers_rsp  0/124  Ram=8
+   ³     ³  ÃÄmodbus_serial_send_start  0/40  Ram=2
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄmodbus_serial_send_stop  0/52  Ram=2
+   ³     ³     ÀÄ*
+   ³     ÃÄmodbus_read_input_registers_rsp  0/124  Ram=8
+   ³     ³  ÃÄmodbus_serial_send_start  0/40  Ram=2
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄmodbus_serial_send_stop  0/52  Ram=2
+   ³     ³     ÀÄ*
+   ³     ÃÄmodbus_exception_rsp  0/32  Ram=6
+   ³     ³  ÀÄ*
+   ³     ÃÄmodbus_exception_rsp  0/32  Ram=6
+   ³     ³  ÀÄ*
+   ³     ÃÄmodbus_write_single_coil_rsp  0/60  Ram=6
+   ³     ³  ÃÄmodbus_serial_send_start  0/40  Ram=2
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄmodbus_serial_send_stop  0/52  Ram=2
+   ³     ³     ÀÄ*
+   ³     ÃÄmodbus_exception_rsp  0/32  Ram=6
+   ³     ³  ÀÄ*
+   ³     ÃÄmodbus_write_single_register_rsp  0/60  Ram=6
+   ³     ³  ÃÄmodbus_serial_send_start  0/40  Ram=2
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄmodbus_serial_send_stop  0/52  Ram=2
+   ³     ³     ÀÄ*
+   ³     ÃÄmodbus_exception_rsp  0/32  Ram=6
+   ³     ³  ÀÄ*
+   ³     ÃÄswap_bits  0/106  Ram=2
+   ³     ÃÄmodbus_write_multiple_coils_rsp  0/60  Ram=6
+   ³     ³  ÃÄmodbus_serial_send_start  0/40  Ram=2
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄmodbus_serial_send_stop  0/52  Ram=2
+   ³     ³     ÀÄ*
+   ³     ÃÄmodbus_exception_rsp  0/32  Ram=6
+   ³     ³  ÀÄ*
+   ³     ÃÄmodbus_write_multiple_registers_rsp  0/60  Ram=6
+   ³     ³  ÃÄmodbus_serial_send_start  0/40  Ram=2
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmodbus_serial_putc  0/36  Ram=1
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄmodbus_serial_send_stop  0/52  Ram=2
+   ³     ³     ÀÄ*
+   ³     ÀÄmodbus_exception_rsp  0/32  Ram=6
+   ³        ÀÄ*
+   ÃÄ@TIMERISR_1  0/14  Ram=0
+   ÃÄincomming_modbus_serial  0/106  Ram=3
+   ³  ÃÄ@GETCH_BIU_2  0/26  Ram=0
+   ³  ÃÄmodbus_enable_timeout  0/18  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÀÄmodbus_calc_crc  0/38  Ram=2
+   ³     ÀÄ*
+   ÀÄuart_serial_rcv  0/104  Ram=5
+      ÀÄ@GETCH_BIU_3  0/34  Ram=0
