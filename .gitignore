@@ -1,5 +1,8 @@
 Galio-Protolink.X/Makefile
 Galio-Protolink.X/nbproject
+Galio-Protolink.X/build
+Galio-Protolink.X/debug
+Galio-Protolink.X/dist
 ./build/
 ./debug/
 ./dist/
